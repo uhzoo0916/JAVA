@@ -3,7 +3,7 @@ package argumentVariable;
 import java.util.Arrays;
 
 public class MainEntry {	
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		
 	     System.out.println(plus(1));
 	        System.out.println(plus(1, 2, 3));//1+2+3
