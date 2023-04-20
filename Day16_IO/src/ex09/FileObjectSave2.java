@@ -1,5 +1,6 @@
 package ex09;
 
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,15 +10,15 @@ import java.io.ObjectOutputStream;
 
 public class FileObjectSave2 {
 	public static void main(String[] args) throws IOException {
-		// �̸� ���� �μ�
+		// 이름 직급 부서
 		String name = null;
 		String position = null;
 		String part = null;
 		boolean con = true;
 
 		/*
-		 * FileObjectSave ������ �����ð��� �� ����� ��κ� �����մϴ�. ��� �Է����� �˷��ִ� boolean���� con��
-		 * ���� ���� �Է��� �޽��ϴ�.
+		 * FileObjectSave 파일은 수업시간에 한 내용과 대부분 동일합니다. 계속 입력할지 알려주는 boolean변수 con을
+		 * 통해 연속 입력을 받습니다.
 		 */
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,12 +31,12 @@ public class FileObjectSave2 {
 			oos = new ObjectOutputStream(fos);
 
 			while (con) {
-				System.out.println("----------------ȸ�� ���� �Է� �ϱ� ----------------------");
-				System.out.print("�̸� >> ");
+				System.out.println("----------------회원 정보 입력 하기 ----------------------");
+				System.out.print("이름 >> ");
 				name = br.readLine();
-				System.out.print("���� >> ");
+				System.out.print("직급 >> ");
 				position = br.readLine();
-				System.out.print("�μ� >> ");
+				System.out.print("부서 >> ");
 				part = br.readLine();
 
 				oos.writeObject(name);

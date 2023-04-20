@@ -82,54 +82,50 @@ public class MainEntry {
 				
 			break;
 				
-//					case 4: // 고객 정보 수정 이 부분이 문제 인 것 같은디 ,,, 
-//				System.out.println();
-//				System.out.print("수정할 고객의 이름을 입력하세요.");
-//				name = sc.next(); //입력한 문자열 값 name 에 넣기 
-//				
-//				for (int i = 0; i < customers.size(); i++) {
-//					if (name.equals(customers.get(i).getName())) {
-//						
-////						System.out.println("이름 : ");
-////						name = sc.next();
-////						
-////						System.out.println("주소 :");
-////						address = sc.next();
-////						
-////						System.out.println("연락처 : ");
-////						tel = sc.next();
-//				
-//
-//						System.out.println();
-//
-//						switch (n) {
-//						case 1:
-//							System.out.print("이름을 새로 입력하세요.");
-//							name = sc.next();
-//							customers.get(i).setName(name);
-//							break;
-//						case 2:
-//							System.out.print("주소를 새로 입력하세요.");
-//							address = sc.next();
-//							customers.get(i).setAddress(address);
-//							break;
-//						case 3:
-//							System.out.print("번호를 새로 입력하세요.");
-//							tel = sc.next();
-//							customers.get(i).setTel(tel);
-//							break;
-//		
-//						}
-//						System.out.println("수정되었습니다!");
-//						System.out.println(customers);
-//						System.out.println();
-//
-//						} else
-//						System.out.println("잘못된 정보입니다.");
-//						} 
-//					break;
-//				
-				default:
+					
+			case 4: // 고객 정보 수정 이 부분이 문제 인 것 같은디 ,,, 
+				System.out.print("수정할 고객의 이름을 입력하세요.");
+				name = sc.next(); //입력한 문자열 값 name 에 넣기 
+				
+				for (int i = 0; i < customers.size(); i++) {
+					if (name.equals(customers.get(i).getName())) {
+						
+						
+						 System.out.println("이름 : ");  name = sc.next();
+						 System.out.println("주소 :");  address = sc.next();
+						 System.out.println("연락처 : ");  tel = sc.next();
+						 
+
+						System.out.println();
+
+						switch (n) {
+						case 1:
+							System.out.print("이름을 새로 입력하세요.");
+							name = sc.next();
+							customers.get(i).setName(name);
+							break;
+						case 2:
+							System.out.print("주소를 새로 입력하세요.");
+							address = sc.next();
+							customers.get(i).setAddress(address);
+							break;
+						case 3:
+							System.out.print("번호를 새로 입력하세요.");
+							tel = sc.next();
+							customers.get(i).setTel(tel);
+							break;
+		
+						}
+						System.out.println("수정되었습니다!");
+						System.out.println(customers);
+						System.out.println();
+
+						} else
+						System.out.println("잘못된 정보입니다.");
+						} 
+					break;
+				
+					default:
 					System.out.println("error : 1-4까지의 숫자만 입력 하세요");
 					System.out.println();
 					System.out.println("프로그램이 종료 되었습니다.");
